@@ -18,7 +18,7 @@ public class Mage extends Character {
   public void specialize() {
     if (Math.random() < 0.66) 
       _def *= 1000;
-    _atk = 0.5
+    _atk = 0.5;
     }
   
   public void normalize() {
