@@ -4,7 +4,7 @@ public class Mage extends Character {
   
   public Mage () {
       _hp = 85;
-      _str = 20;
+      _str = 25;
       _def = 12;
       _atk = 1.0;
   }
