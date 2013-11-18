@@ -15,12 +15,13 @@ public class YoRPG {
     public final static int MAX_ENCOUNTERS = 5;
 
     //each round, a Warrior and a Monster will be instantiated
-    private Warrior pat;   //Is it man or woman?
+    private Character pat;   //Is it man or woman?
     private Monster smaug; //Friendly generic monster name, eh?
 
     private int moveCount;
     private boolean gameOver;
     private int difficulty;
+    private int class;
 
     private InputStreamReader isr;
     private BufferedReader in;
@@ -64,7 +65,7 @@ public class YoRPG {
 	}
 	catch ( IOException e ) { }
 
-	s = "Intrepid warrior, what doth thy call thyself? (State your name): ";
+	s = "Intrepid player, what doth thy call thyself? (State your name): ";
 	System.out.print( s );
 
 	try {
@@ -74,8 +75,32 @@ public class YoRPG {
 
 
 	//instantiate the player's character
-	pat = new Warrior( name );
-
+	s = "What class shall thy become? \n" ;
+	s += "\t1: Warrior";
+	s += "\t2: Archer";
+	s += "\t3: Mage";
+	s += "\t4: Rogue";
+	s += "\t5: Scout";
+	s += "\t6: Paladin";
+	System.out.print( s );
+	
+	try {
+		class = Integer.parseInt (in.readLine() );
+	}
+	catch ( IOException e ) { }
+	
+	if (class = 1)
+		pat = new Warrior( name );
+	if (class = 2)
+		pat = new Archer( name );
+	if (class = 3)
+		pat = new Mage( name );
+	if (class = 4)
+		pat = new Rogue( name );
+	if (class = 5)
+		pat = new Scout( name );
+	if (class = 6)
+		pat = new Paladin( name );
     }//end newGame()
 
 
