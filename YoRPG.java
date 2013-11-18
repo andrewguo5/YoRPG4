@@ -89,17 +89,17 @@ public class YoRPG {
 	}
 	catch ( IOException e ) { }
 	
-	if (playerclass = 1)
+	if (playerclass == 1)
 		pat = new Warrior( name );
-	if (playerclass = 2)
+	if (playerclass == 2)
 		pat = new Archer( name );
-	if (playerclass = 3)
+	if (playerclass == 3)
 		pat = new Mage( name );
-	if (playerclass = 4)
+	if (playerclass == 4)
 		pat = new Rogue( name );
-	if (playerclass = 5)
+	if (playerclass == 5)
 		pat = new Scout( name );
-	if (playerclass = 6)
+	if (playerclass == 6)
 		pat = new Paladin( name );
     }//end newGame()
 
