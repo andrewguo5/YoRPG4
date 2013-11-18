@@ -32,7 +32,6 @@ public class Archer extends Character {
     }
     
     public String about() {
-      return "A nimble, well-trained archer, whose arrows and shafts pierce his hapless foes. 
-              The archer can actively focus for a chance to critically strike, while decreasing his defense.";
+      return "A nimble, well-trained archer, whose arrows and shafts pierce his hapless foes. The archer can actively focus for a chance to critically strike, while decreasing his defense.";
     }
 }
