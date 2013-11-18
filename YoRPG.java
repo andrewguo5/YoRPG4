@@ -85,7 +85,7 @@ public class YoRPG {
 	System.out.print( s );
 	
 	try {
-		class = Integer.parseInt (in.readLine() );
+		playerclass = Integer.parseInt (in.readLine() );
 	}
 	catch ( IOException e ) { }
 	
