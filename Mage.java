@@ -4,9 +4,9 @@ public class Mage extends Character {
   
   public Mage () {
       _hp = 85;
-      _str = 15;
+      _str = 20;
       _def = 12;
-      _atk = 0.8;
+      _atk = 1.0;
   }
   
   public Archer (String newName) {
@@ -18,11 +18,16 @@ public class Mage extends Character {
   public void specialize() {
     if (Math.random() < 0.66) 
       _def *= 1000;
-    _atk = 0.4
+    _atk = 0.5
     }
   
   public void normalize() {
       _def = 12;
       _atk = 0.8;
+  }
+  
+  public String about() {
+      return "A powerful mage, whose spells have the potential to deal massive damage. To compensate for her 
+              physical weakness, she casts defensive barriers to protect her from incoming damage."
   }
 }
