@@ -11,10 +11,10 @@
 public abstract class Character {
 
     // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
-    protected int _hitPts;
-    protected int _strength;
-    protected int _defense;
-    protected double _attack;
+    protected int _hp;
+    protected int _str;
+    protected int _def;
+    protected double _atk;
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -24,15 +24,15 @@ public abstract class Character {
       post: initializes instance vars.
       =============================================*/
     public Character() {
-	_hitPts = 125;
-	_strength = 100;
-	_defense = 40;
-	_attack = .4;
+	_hp = 125;
+	_str = 100;
+	_def = 40;
+	_atk = .4;
     }
 
 
     // ~~~~~~~~~~~~~~ ACCESSORS ~~~~~~~~~~~~~~~~~
-    public int getDefense() { return _defense; }
+    public int getDefense() { return _def; }
 
     public abstract String getName();
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,7 +43,7 @@ public abstract class Character {
       post: returns boolean indicated alive or dead
       =============================================*/
     public boolean isAlive() {
-	return _hitPts > 0;
+	return _hp > 0;
     }
 
 
@@ -56,7 +56,7 @@ public abstract class Character {
       =============================================*/
     public int attack( Character opponent ) {
 
-	int damage = (int)( (_strength * _attack) - opponent.getDefense() );
+	int damage = (int)( (_str * _atk) - opponent.getDefense() );
 	//System.out.println( "\t\t**DIAG** damage: " + damage );
 
 	if ( damage < 0 )
@@ -74,7 +74,7 @@ public abstract class Character {
       post: Life instance var is lowered by input ammount.
       =============================================*/
     public void lowerHP( int damageInflicted ) {
-	_hitPts = _hitPts - damageInflicted;
+	_hp = _hp - damageInflicted;
     }
 
 
