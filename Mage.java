@@ -27,7 +27,7 @@ public class Mage extends Character {
   }
   
   public String about() {
-      return "A powerful mage, whose spells have the potential to deal massive damage. To compensate for her 
+      return "A powerful mage, whose spells deal heavy damage. To compensate for her 
               physical weakness, she casts defensive barriers to protect her from incoming damage."
   }
 }
