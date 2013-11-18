@@ -30,4 +30,8 @@ public class Archer extends Character {
       _def = 16;
       _atk = 0.5;
     }
+    
+    public String about() {
+      return "A nimble, well-trained archer, whose arrows and shafts pierce his hapless foes. The archer can actively focus for a chance to critically strike, while decreasing his defense."
+    }
 }
