@@ -14,7 +14,20 @@ public class Archer extends Character {
     _name = newName;
   }
   
-  /*
-  methods here
-  */
+  public String getName() {
+    return _name;
+  }
+  
+  //Specialize grants a 66% chance on usage to deal double damage, but decreased defense for a turn
+  public void specialize() {
+    _def = 7
+      + (int)(Math.random()*2);
+    if (Math.random() < 0.66)
+      _atk *= 2;
+    }
+    
+    public void normalize() {
+      _def = 16;
+      _atk = 0.5;
+    }
 }
