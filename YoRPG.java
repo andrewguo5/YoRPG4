@@ -21,7 +21,7 @@ public class YoRPG {
     private int moveCount;
     private boolean gameOver;
     private int difficulty;
-    private int class;
+    private int playerclass;
 
     private InputStreamReader isr;
     private BufferedReader in;
@@ -89,17 +89,17 @@ public class YoRPG {
 	}
 	catch ( IOException e ) { }
 	
-	if (class = 1)
+	if (playerclass = 1)
 		pat = new Warrior( name );
-	if (class = 2)
+	if (playerclass = 2)
 		pat = new Archer( name );
-	if (class = 3)
+	if (playerclass = 3)
 		pat = new Mage( name );
-	if (class = 4)
+	if (playerclass = 4)
 		pat = new Rogue( name );
-	if (class = 5)
+	if (playerclass = 5)
 		pat = new Scout( name );
-	if (class = 6)
+	if (playerclass = 6)
 		pat = new Paladin( name );
     }//end newGame()
 
