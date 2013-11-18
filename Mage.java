@@ -9,7 +9,7 @@ public class Mage extends Character {
       _atk = 1.0;
   }
   
-  public Archer (String newName) {
+  public Mage (String newName) {
     this();
     _name = newName;
   }
