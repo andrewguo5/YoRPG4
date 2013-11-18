@@ -9,7 +9,7 @@ public class Rogue extends Character {
       _atk = 0.35;
   }
   
-  public Archer (String newName) {
+  public Rogue(String newName) {
     this();
     _name = newName;
   }
